@@ -1,16 +1,21 @@
 class FundamentalController < ApplicationController
-    def top
-    end
+    before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
+
     
-    def cats
-    end
-    
-    def dogs
-    end
-    
-    def others
+    def index
     end
     
     def sitepolicy
     end    
+    
+    def about_site
+    end
+    
+    def trade_law
+    end 
+    
+    def show
+    end    
+    
+    
 end

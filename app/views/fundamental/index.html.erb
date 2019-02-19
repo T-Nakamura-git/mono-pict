@@ -1,0 +1,70 @@
+<%= render 'header' %>
+
+ <div class="container-fluid">
+    <!--documents-->
+      <div class="row row-offcanvas row-offcanvas-left">
+      <%= render 'navigation' %>  
+        <div class="col-xs-12 col-sm-9 content">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fas fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> メニュー開閉</h3>
+            </div>
+            
+            <div class="panel-body">
+              <div class="content-row">
+               <div class="slider">
+                  <%= image_tag 'ben' %>
+                  <%= image_tag 'sco' %>
+                  <%= image_tag 'abi' %>
+               </div>
+               
+                <h2 class="content-row-title">カテゴリ</h2>
+                <div class="row">
+                  <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                     <%= image_tag 'ben' %>
+                      <div class="caption text-center">
+                        <h3>オススメ</h3>
+                        <p><%= link_to '見る', '/show', {:class => "btn btn-default", :role => "button"} %></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <%= image_tag 'ben' %>
+                      <div class="caption text-center">
+                        <h3>ネコ</h3>
+                        <p><%= link_to '見る', '/show', {:class => "btn btn-default", :role => "button"} %></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <%= image_tag 'ben' %>
+                      <div class="caption text-center">
+                        <h3>いぬ</h3>
+                        <p><%= link_to '見る', '/show', {:class => "btn btn-default", :role => "button"} %></p>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <%= image_tag 'ben' %>
+                      <div class="caption text-center">
+                        <h3>その他</h3>
+                        <p><%= link_to '見る', '/show', {:class => "btn btn-default", :role => "button"} %></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div><!--row-->
+              </div><!--content-row-->
+            </div><!-- panel body -->
+          </div><!--panel panel-default-->
+        </div><!-- content -->
+      </div><!--row row-offcanvas row-offcanvas-left-->
+    </div><!--container-->
+<%= render 'footer' %>
