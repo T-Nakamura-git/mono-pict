@@ -47,8 +47,4 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: shopper_apps_production
-  username: shopper_apps
-  password: <%= ENV['SHOPPER_APPS_DATABASE_PASSWORD'] %>
+production: <%= ENV['CLEARDB_DATABASE_URL'] %>
