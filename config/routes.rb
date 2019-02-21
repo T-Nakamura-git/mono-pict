@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :photos
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
     root "fundamental#index" #トップページ
@@ -6,7 +7,8 @@ Rails.application.routes.draw do
     get "/about_site", to: "fundamental#about_site" #サイト
     get "/show", to: "fundamental#show" 
     get "/form", to: "fundamental#form" #問い合わせ
-    #get "/"
+    post '/confirm', to: 'fundamental#confirm'#問い合わせ確認画面
+    post '/sended', to: 'fundamental#sended'#問い合わせ完了画面
 end
 
 
