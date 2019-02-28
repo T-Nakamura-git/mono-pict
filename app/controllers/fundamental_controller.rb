@@ -15,7 +15,7 @@ class FundamentalController < ApplicationController
     def trade_law
     end 
     
-    def show
+    def display_photo
     end    
     
     def form
