@@ -16,20 +16,7 @@
                
                 <h2 class="content-row-title">カテゴリ</h2>
                 <div class="row">
-                  <% @photos.each do |photo| %>
-                    <div class="col-sm-6 col-md-3">
-                      <div class="thumbnail">
-                        <% if photo.image? %>
-                          <%= image_tag(photo.image.thumb.url) %> 
-                        <% end %>
-                        <div class="caption text-center">
-                          <h3><%= photo.title %></h3>
-                          <p><%= link_to '見る', '/display_photo', {:class => "btn btn-default", :role => "button"} %></p>
-                        </div>
-                      </div>
-                    </div>
-                  <% end %>
-                  
+                 
                   
                 </div><!--row-->
               </div><!--content-row-->
