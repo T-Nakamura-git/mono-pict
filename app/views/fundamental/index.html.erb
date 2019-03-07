@@ -24,7 +24,7 @@
                         <% end %>
                         <div class="caption text-center">
                           <h3><%= photo.title %></h3>
-                          <p><%= link_to '見る', '/display_photo', {:class => "btn btn-default", :role => "button"} %></p>
+                          <p><%= link_to '見る', display_photo_path(photo), {:class => "btn btn-default", :role => "button"} %></p>
                         </div>
                       </div>
                     </div>

@@ -22,7 +22,6 @@
                    <li class="navbar-brand　glyphicon" ><%= link_to 'プロフィール変更', edit_user_registration_path %></li>
                    <li class="navbar-brand　glyphicon" ><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
               <% else %>
-                   <li class="fnavbar-brand　glyphicon" ><%= link_to 'ユーザ登録', new_user_registration_path %></li>
                    <li class="navbar-brand　glyphicon" ><%= link_to 'ログイン', new_user_session_path %> </li>
               <% end %>
          

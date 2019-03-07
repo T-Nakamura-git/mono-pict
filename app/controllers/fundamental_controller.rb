@@ -16,6 +16,7 @@ class FundamentalController < ApplicationController
     end 
     
     def display_photo
+     @photo = Photo.find(params[:id])
     end    
     
     def form
