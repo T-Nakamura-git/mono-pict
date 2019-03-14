@@ -25,5 +25,24 @@
 }
 
 
+.picture_display{
+    text-align: center !important;
+}
 
 
+
+.site_text{
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer_menu > li > a{
+    text-align: left;
+    color: #aaabae !important;
+    font-size: 12px;
+    :hover{
+        color: #fff;
+        background-color: #2B303A;  
+    }
+  
+}
