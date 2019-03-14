@@ -1,0 +1,8 @@
+ja:
+  activemodel:
+    models:
+      contact_form: "フォーム"
+    attributes:
+      contact_form:
+        email: "メールアドレス"
+        name: "名前"

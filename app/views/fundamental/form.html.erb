@@ -9,7 +9,7 @@
         <div class="alert alert-danger" role="alert">
           <strong>入力内容にエラーがあります</strong>
           <ul>
-            <% @form.errors.each do |attr, msg| %>
+            <% @form.errors.full_messages.each do |msg| %>
               <li><%= msg %></li>
             <% end %>
           </ul>
@@ -30,7 +30,7 @@
           <td><%= f.text_area :message %></td>
         </tr>
         </table>
-         <%= link_to "戻る", "/toppage", class: 'btn btn-default' %>
+        <%= link_to "戻る", "/", class: 'btn btn-default' %>
         <%= f.submit '内容を確認', class: 'btn btn-primary' %>
        
     </div>    

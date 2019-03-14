@@ -20,12 +20,12 @@ class FundamentalController < ApplicationController
     end    
     
     def form
-     @form = Form.new
+     @form = ContactForm.new
      render :action => 'form'
     end  
   
     def confirm
-     @form = Form.new(form_params)
+     @form = ContactForm.new(form_params)
      if @form.valid?
        render :action => 'confirm'
      else
@@ -34,7 +34,7 @@ class FundamentalController < ApplicationController
     end
  
     def sended
-     @form = Form.new(form_params)
+     @form = ContactForm.new(form_params)
      if params[:back]
        render :action => 'form'
      else
@@ -45,7 +45,7 @@ class FundamentalController < ApplicationController
   
     private
     def form_params
-     params.require(:form).permit(:name, :email, :message)
+     params.require(:contact_form).permit(:name, :email, :message)
     end
   
 end
